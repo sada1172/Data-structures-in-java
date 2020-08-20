@@ -1,0 +1,23 @@
+public class removeDuplicate {
+  import kjava.util.Scanner;
+	public static String removeConsecutiveDuplicates(String s) {
+		if(s.length()==1){
+            return s;
+        }
+        String ans = "";
+        String small = removeConsecutiveDuplicates(s.substring(1));
+        if(s.charAt(0)!=small.charAt(0)){
+            ans = ans + s.charAt(0);   
+        }
+        
+        return ans + small;
+
+	}
+  
+  public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+    	String input = s.next();
+    	System.out.println(removeConsecutiveDuplicates(input));
+    }
+
+}
