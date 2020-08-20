@@ -1,5 +1,5 @@
 public class removeDuplicate {
-  import kjava.util.Scanner;
+  import java.util.Scanner;
 	public static String removeConsecutiveDuplicates(String s) {
 		if(s.length()==1){
             return s;
