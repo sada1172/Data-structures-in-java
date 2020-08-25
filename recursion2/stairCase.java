@@ -12,7 +12,7 @@ Sample Output 1 :
 Sample Input 2 :
 5
 Sample Output 2 :
-13 /*
+13 */
 
 
 import java.util.Scanner;
@@ -35,7 +35,7 @@ public class staircase {
   public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
-		System.out.println(Solution.staircase(n));
+		System.out.println(staircase(n));
 	}
 
-	}
+}
